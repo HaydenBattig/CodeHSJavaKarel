@@ -1,0 +1,23 @@
+function start(){
+    goToWall();
+    placePile();
+    turnAround();
+    goToWall();
+    turnAround();
+}
+
+
+// Puts down a pile of 15 balls
+function placePile(){
+    for(var i = 0; i < 15; i++){
+        putBall();
+    }
+}
+
+// Goes to the wall
+function goToWall(){
+    while(frontIsClear()){
+        move();
+    }
+    
+}
